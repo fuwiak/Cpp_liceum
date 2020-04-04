@@ -38,8 +38,40 @@ while(ind<10):
   ind+=1
 
   
-  
-  
+#list, tuple, set, dict
+
+lista = []
+lista=[1,9,1,8]
+lista[0]
+lista[-1]
+lista[::2]
+lista[:-1]
+lista[2:3]
+
+
+krotka = (1,8,1,9)
+
+krotka[0]=11 #!!!
+
+zbior = set(lista)
+
+slownik["var"]="value"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   
   
