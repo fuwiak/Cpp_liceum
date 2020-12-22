@@ -37,3 +37,28 @@ for row in splitted_przyklad:
 
 print("max", maxi)
 print("min", mini)
+
+
+import math
+contrasting = 0
+def nearContrasting(x, y, dane):
+    if x != 0:
+        if math.fabs(int(dane[x][y]) - int(dane[x-1][y])) > 128:
+            return True
+    if x != 199:
+        if math.fabs(int(dane[x][y]) - int(dane[x + 1][y])) > 128:
+            return True
+    if y != 319:
+        if math.fabs(int(dane[x][y]) - int(dane[x][y+1])) > 128:
+            return True
+    if y != 0:
+        if math.fabs(int(dane[x][y]) - int(dane[x][y-1])) > 128:
+            return True
+    return False
+for i in range(200):
+    for j in range(320):
+        if nearContrasting(i, j, dane):
+            contrasting += 1
+print("Punktów kontrastujących: " + str(contrasting))
+
+
