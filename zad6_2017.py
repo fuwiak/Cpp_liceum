@@ -57,7 +57,7 @@ def nearContrasting(x, y, dane):
     return False
 for i in range(200):
     for j in range(320):
-        if nearContrasting(i, j, dane):
+        if nearContrasting(i, j, splitted_przyklad):
             contrasting += 1
 print("Punktów kontrastujących: " + str(contrasting))
 
